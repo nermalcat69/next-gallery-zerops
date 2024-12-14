@@ -2,11 +2,6 @@ zerops:
   - setup: app
     build:
       base: nodejs@20
-      envVariables:
-        NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: your_env_var
-        CLOUDINARY_API_KEY: your_env_var
-        CLOUDINARY_API_SECRET: your_env_var
-        CLOUDINARY_FOLDER: your_env_var
       prepareCommands:
         - apk add --no-cache build-base libjpeg-turbo-dev libpng-dev vips-dev python3 nasm autoconf automake libtool
       buildCommands:
@@ -15,11 +10,6 @@ zerops:
       deployFiles: ./
     run:
       base: nodejs@20
-      envVariables:
-        NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: your_env_var
-        CLOUDINARY_API_KEY: your_env_var
-        CLOUDINARY_API_SECRET: your_env_var
-        CLOUDINARY_FOLDER: your_env_var
       ports:
         - port: 3000
           httpSupport: true
