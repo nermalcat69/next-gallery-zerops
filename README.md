@@ -9,6 +9,7 @@ This example shows how to create an image gallery site using Next.js, [Cloudinar
 ```yml
 project:
   name: Image Gallery
+  
 services:
   - hostname: app
     type: nodejs@20
