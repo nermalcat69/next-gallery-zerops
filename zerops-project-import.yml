@@ -1,0 +1,11 @@
+project:
+  name: Image Gallery
+  
+services:
+  - hostname: app
+    type: nodejs@20
+    envSecrets:
+      CLOUDINARY_API_KEY: get-from-cloudinary
+      CLOUDINARY_API_SECRET: get-from-cloudinary
+      CLOUDINARY_FOLDER: get-from-cloudinary # create a folder in cloudinary from media explorer
+      NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: get-from-cloudinary
